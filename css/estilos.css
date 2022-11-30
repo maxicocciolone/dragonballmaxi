@@ -1,0 +1,318 @@
+@font-face {
+  font-family: dragonball;
+  src: url(../fonts/saiyan-sans/Saiyan-Sans.ttf);
+}
+@-webkit-keyframes slide-in-elliptic-left-bck {
+  0% {
+    -webkit-transform: translateX(-800px) rotateY(-30deg) scale(6.5);
+    transform: translateX(-800px) rotateY(-30deg) scale(6.5);
+    -webkit-transform-origin: 200% 50%;
+    transform-origin: 200% 50%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotateY(0) scale(1);
+    transform: translateX(0) rotateY(0) scale(1);
+    -webkit-transform-origin: -600px 50%;
+    transform-origin: -600px 50%;
+    opacity: 1;
+  }
+}
+@keyframes slide-in-elliptic-left-bck {
+  0% {
+    -webkit-transform: translateX(-800px) rotateY(-30deg) scale(6.5);
+    transform: translateX(-800px) rotateY(-30deg) scale(6.5);
+    -webkit-transform-origin: 200% 50%;
+    transform-origin: 200% 50%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotateY(0) scale(1);
+    transform: translateX(0) rotateY(0) scale(1);
+    -webkit-transform-origin: -600px 50%;
+    transform-origin: -600px 50%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/*Responsive design-Media queries*/
+/*desktop*/
+@media (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+  }
+}
+/*tablet*/
+@media (min-width: 600px) and (max-width: 1023px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25% 25%;
+  }
+}
+/*smartphone*/
+@media (max-width: 599px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  }
+}
+body {
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-naranja-abstracto-lineas-efecto-semitono_1017-32107.jpg?w=1380&t=st=1668561597~exp=1668562197~hmac=0866ceda29d8a473fb7f269c0746c52c2ad154cb824022a2e4568282fe6aa42e);
+}
+
+li {
+  list-style: none;
+  font-size: 2rem;
+}
+
+a {
+  color: black;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 5rem;
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+  font-family: dragonball;
+  margin-top: 80px;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 3rem;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  padding: 30px;
+}
+
+footer {
+  background-color: bisque;
+}
+
+nav {
+  background-color: bisque;
+}
+
+/* clases */
+.footersize {
+  font-size: 15px;
+}
+
+.imgform {
+  width: 300px;
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.imgpers {
+  width: 200px;
+  height: 350px;
+}
+
+.imgmulti {
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.carrusel {
+  width: 100%;
+}
+
+.formulario {
+  border: groove 5px black;
+  border-radius: 20px;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 40px;
+  padding-top: 30px;
+  background-color: bisque;
+}
+
+.principal {
+  color: black;
+  text-align: justify;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.descriptem {
+  text-align: justify;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  margin-left: 20px;
+  margin-right: 110px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.margenmulti {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.slide-in-elliptic-left-bck {
+  -webkit-animation: slide-in-elliptic-left-bck 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-elliptic-left-bck 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.cards {
+  margin: 30px;
+}
+
+/*box model*/
+.margen {
+  margin-top: 30px;
+  margin-left: 22px;
+  margin-right: 26px;
+  margin-bottom: 30px;
+}
+
+.margen-interno {
+  padding-top: 30px;
+}
+
+.sizeimg {
+  width: 455px;
+  height: 290px;
+}
+
+.margenp {
+  margin-left: 60px;
+  margin-right: 30px;
+  text-align: justify;
+}
+
+.margenbottom {
+  margin-bottom: 50px;
+}
+
+/*flex box*/
+.is-flex {
+  display: flex;
+}
+
+.is-flex-wrap {
+  flex-flow: wrap;
+}
+
+.is-justify-center {
+  justify-content: center;
+}
+
+.is-justify-right {
+  justify-content: right;
+}
+
+.is-align-center {
+  align-items: center;
+}
+
+.is-no-wrap {
+  flex-wrap: nowrap;
+}
+
+/*GRIDS*/
+/*Grid explicitas*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50% 50%;
+}
+
+/*EACH*/
+main {
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-naranja-abstracto-lineas-efecto-semitono_1017-32107.jpg?w=1380&t=st=1668561597~exp=1668562197~hmac=0866ceda29d8a473fb7f269c0746c52c2ad154cb824022a2e4568282fe6aa42e);
+}
+
+/*mapas*/
+/*mapas con each*/
+.boton-youtube {
+  border: groove 3px red;
+}
+
+.boton-instagram {
+  border: groove 3px rgb(143, 52, 143);
+}
+
+.boton-facebook {
+  border: groove 3px #55acee;
+}
+
+section div.youtube {
+  border: groove 3px red;
+}
+
+section div.instagram {
+  border: groove 3px rgb(143, 52, 143);
+}
+
+section div.facebook {
+  border: groove 3px #55acee;
+}
+
+/*Responsive design-Media queries*/
+/*desktop*/
+@media (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+  }
+}
+/*tablet*/
+@media (min-width: 600px) and (max-width: 1023px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25% 25%;
+  }
+}
+/*smartphone*/
+@media (max-width: 599px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,90 @@
+@use "imports";
+
+@use "responsive";
+
+@use "globales";
+
+/*EACH*/
+
+@each $secciones in main{
+
+    #{$secciones}{
+        background-image: url(https://img.freepik.com/vector-gratis/fondo-naranja-abstracto-lineas-efecto-semitono_1017-32107.jpg?w=1380&t=st=1668561597~exp=1668562197~hmac=0866ceda29d8a473fb7f269c0746c52c2ad154cb824022a2e4568282fe6aa42e) ;
+    }
+    
+}
+
+/*mapas*/
+
+$mapa:(
+    youtube: groove 3px red,
+    instagram: groove 3px rgb(143, 52, 143),
+    facebook: groove 3px #55acee,
+
+);
+
+/*mapas con each*/
+
+@each $nombres, $bordecito in $mapa{
+
+    .boton-#{$nombres}{
+        border: $bordecito;
+    }
+}
+
+section div.youtube{ 
+    border: map-get($mapa, youtube);
+}
+section div.instagram{ 
+    border: map-get($mapa, instagram); 
+}
+section div.facebook{ 
+    border: map-get($mapa, facebook);
+}
+
+
+
+
+
+/*Responsive design-Media queries*/
+
+/*desktop*/
+
+
+@media (min-width: 1024px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows:50% 50% ;
+            
+    }
+
+}
+
+/*tablet*/
+
+
+@media (min-width: 600px) and (max-width:1023px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 25% 25%  ;
+        
+        
+    }
+
+}
+
+/*smartphone*/
+
+@media (max-width: 599px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr  ;
+        grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+        
+        
+    }
+
+}
+

@@ -1,0 +1,7 @@
+@font-face{
+    font-family: dragonball;
+    src: url(../fonts/saiyan-sans/Saiyan-Sans.ttf);
+}
+
+@-webkit-keyframes slide-in-elliptic-left-bck{0%{-webkit-transform:translateX(-800px) rotateY(-30deg) scale(6.5);transform:translateX(-800px) rotateY(-30deg) scale(6.5);-webkit-transform-origin:200% 50%;transform-origin:200% 50%;opacity:0}100%{-webkit-transform:translateX(0) rotateY(0) scale(1);transform:translateX(0) rotateY(0) scale(1);-webkit-transform-origin:-600px 50%;transform-origin:-600px 50%;opacity:1}}@keyframes slide-in-elliptic-left-bck{0%{-webkit-transform:translateX(-800px) rotateY(-30deg) scale(6.5);transform:translateX(-800px) rotateY(-30deg) scale(6.5);-webkit-transform-origin:200% 50%;transform-origin:200% 50%;opacity:0}100%{-webkit-transform:translateX(0) rotateY(0) scale(1);transform:translateX(0) rotateY(0) scale(1);-webkit-transform-origin:-600px 50%;transform-origin:-600px 50%;opacity:1}}
+@-webkit-keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
